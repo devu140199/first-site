@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Facilities</title>
+    <link rel="stylesheet" href="facility.css">
+    <meta name="viewport" content="width=device-width, initail-scale=1.0">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&family=VT323&display=swap" rel="stylesheet">
+    <!-- end -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="header" id="hom">
+        
+        <nav>
+            <a href="#"><img src="images1/logo.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="main.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="campus.html">CAMPUS</a></li>
+                    <li><a href="#">BLOG</a>
+                        <div class="submenu">
+                        <ul>
+                            <li><a href="campus.html">Campus</a></li>
+                            <li><a href="facility.html">Facilities</a></li>
+                        </ul>
+                    </div>
+                    </li>
+                    <li><a href="index.html">NOTES</a></li>
+                    <li><a href="contact.html">CONTACTS</a></li>
+                </ul>
+            </div>
+    </section>
+    <!--------------facilities------------->
+
+    <section class="facilities" id="faci">
+        <h3>Our Facilities</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe quo sapiente at expedita ipsum omnis
+            consequatur, assumenda quisquam!</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/library.png">
+                <h1>World Class Library</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, delectus.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/basketball.png">
+                <h1>Largest Play Ground</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, delectus.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/cafeteria.png">
+                <h1>Tasty And Healthy Food</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, delectus.</p>
+            </div>
+        </div>
+    </section>
+    <!---------footer---------->
+    <section class="footer" id="foot">
+        <h1>About</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ducimus nobis velit harum rerum! Veniam
+            corrupti facilis voluptatem incidunt laborum.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made With <i class="fa fa-heart-o"></i> By Devender Sharma </p>
+    </section>
+    <!-------------javascript for toggle btn------------->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showmenu() {
+            navlinks.style.right = "0";
+        }
+        function hidemenu() {
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

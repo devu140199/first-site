@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="campus.css">
+    <title>Campus</title>
+</head>
+<body>
+    <section class="header">
+        
+        <nav>
+            <a href="#"><img src="images1/logo.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="main.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="campus.html">CAMPUS</a></li>
+                    <li><a href="">BLOG</a>
+                        <div class="submenu">
+                        <ul>
+                            <li><a href="campus.html">Campus</a></li>
+                            <li><a href="facility.html">Facilities</a></li>
+                        </ul>
+                    </div>
+                    </li>
+                    <li><a href="index.html">NOTES</a></li>
+                    <li><a href="contact.html">CONTACTS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        </section>
+    <!-- campus -->
+    <SECTION class="campus">
+        <h1>Our Global Campus</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, excepturi. Cupiditate consectetur
+            tempore eaque aspernatur dolorem, sint debitis!</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="images/london.png">
+                <div class="layer">
+                    <h3>LONDON</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/newyork.png">
+                <div class="layer">
+                    <h3>NEWYORK</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/washington.png">
+                <div class="layer">
+                    <h3>WASHINGTON</h3>
+                </div>
+            </div>
+        </div>
+    </SECTION>
+    <!---------footer---------->
+    <section class="footer" id="foot">
+        <h1>About</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ducimus nobis velit harum rerum! Veniam
+            corrupti facilis voluptatem incidunt laborum.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made With <i class="fa fa-heart-o"></i> By Devender Sharma </p>
+    </section>
+    <!-------------javascript for toggle btn------------->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showmenu() {
+            navlinks.style.right = "0";
+        }
+        function hidemenu() {
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
